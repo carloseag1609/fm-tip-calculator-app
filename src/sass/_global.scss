@@ -13,11 +13,11 @@ body {
   font-family: 'Space Mono', sans-serif;
   width: 100vw;
   height: 100vh;
-  margin: 0;
-  // @include for-mobile {
-  //   max-width: 375px;
-  // }
-  // @include for-desktop {
-  //   max-width: 1440px;
-  // }
+  margin: 0 auto;
+  @include for-mobile {
+    max-width: 375px;
+  }
+  @include for-desktop {
+    max-width: 1440px;
+  }
 }

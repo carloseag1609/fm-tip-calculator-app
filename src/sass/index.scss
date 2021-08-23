@@ -3,3 +3,7 @@
 @import './variables';
 @import './mixins';
 @import './global';
+
+// Components
+@import 'components/forms';
+@import 'components/buttons.scss';

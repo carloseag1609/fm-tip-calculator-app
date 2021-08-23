@@ -1,7 +1,14 @@
 @mixin for-mobile {
-  @media (max-width: 375px) { @content; }
+  @media (min-width: 375px) { @content; }
 }
 
 @mixin for-desktop {
-  @media (max-width: 1440px) { @content; } 
+  @media (min-width: 1440px) { @content; } 
+}
+
+@mixin grid($cols, $rows, $gap) {
+  display: grid;
+  grid-template-columns: repeat($cols, 1fr);
+  grid-template-rows: repeat($rows, 1fr);
+  gap: $gap;
 }

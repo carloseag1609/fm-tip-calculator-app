@@ -1,0 +1,38 @@
+.button {
+  padding: 1rem 0;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: $very-dark-cyan;
+  color: $white;
+  font-family: 'Space Mono', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  transition: background 0.2s ease, color 0.2s ease;
+  &:hover {
+    cursor: pointer;
+    background-color: $strong-cyan;
+    color: $very-dark-cyan;
+  }
+  &--selected {
+    background-color: $strong-cyan;
+    color: $very-dark-cyan;
+  }
+  &--custom {
+    background-color: $lighter-grayish-cyan;
+    color: $darker-grayish-cyan;
+  }
+  &--cyan {
+    background-color: $strong-cyan;
+    color: $very-dark-cyan;
+    &:hover {
+      background-color: $light-grayish-cyan;
+    }
+  }
+  &--block {
+    width: 100%;
+  }
+  &--uppercase {
+    text-transform: uppercase;
+  }
+}
